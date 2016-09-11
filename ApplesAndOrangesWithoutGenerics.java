@@ -12,7 +12,7 @@ class Orange{}
 
 public class ApplesAndOrangesWithoutGenerics {
 	public static void main(String[] args) {
-		ArrayList apples = new ArrayList();
+		ArrayList<Apple> apples = new ArrayList();
 		for ( int i=0; i<3 ; i++)
 			apples.add(new Apple());
 
