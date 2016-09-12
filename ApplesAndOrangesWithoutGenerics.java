@@ -8,17 +8,19 @@ class Apple {
 	}
 }
 
-class Orange{}
+// class Orange{}
 
 public class ApplesAndOrangesWithoutGenerics {
 	public static void main(String[] args) {
-		ArrayList<Apple> apples = new ArrayList();
+		ArrayList<Apple> apples = new ArrayList<Apple>();
 		for ( int i=0; i<3 ; i++)
 			apples.add(new Apple());
 
-		apples.add(new Orange());
-		for ( int i=0; i < apples.size(); i++)
-			((Apple)apples.get(i)).id();
+		// apples.add(new Orange());
+		// for ( int i=0; i < apples.size(); i++)
+			// ((Apple)apples.get(i)).id();
+		for (Apple c:apples)
+			System.out.println(c.id());
 	}
 
 }
