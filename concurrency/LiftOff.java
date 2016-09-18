@@ -8,11 +8,11 @@ public class LiftOff implements Runnable {
 	}
 	public String status(){
 		return "#" + id + "(" + 
-			(countDown > 0 ? countDown : "LiftOff!") + ")";
+			(countDown > 0 ? countDown : "LiftOff!") + "), ";
 	}
 	public void run(){
 		while(countDown-- > 0){
-			System.out.println(status());
+			System.out.print(status());
 			Thread.yield();
 		}
 	}
