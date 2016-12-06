@@ -25,9 +25,15 @@ public class IceCream {
 		}
 		return results;
 	}
+	public static int[] returnTest(){
+		int[] res = new int[]{1 ,2 ,3};
+		return res;
+	}
 	public static void main(String[] args) {
 		for (int i = 0; i < 7 ;i++ ) {
 			System.out.println(Arrays.toString(flavorSet(3)));
 		}
+		int[] s = returnTest();
+		System.out.println(Arrays.toString(s));
 	}
 }
